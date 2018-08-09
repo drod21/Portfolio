@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// CSS
+import '../css/home.css'
 class Home extends Component {
   render() {
     return (
