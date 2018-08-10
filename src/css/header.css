@@ -3,6 +3,5 @@
   background-color: #ccc;
   display: flex;
   flex-flow: 'row wrap';
-  justify-content: flex-end; }
-  .header-container .header-link {
-    margin: 15px; }
+  justify-content: flex-end;
+  margin-bottom: 10px; }

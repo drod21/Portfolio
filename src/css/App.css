@@ -1,5 +1,4 @@
 .App {
   background-color: #ccc;
-  display: flex;
-  flex-flow: column;
-  height: 100vh; }
+  height: 100vh;
+  padding: 25px; }
