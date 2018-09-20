@@ -4,7 +4,7 @@ import Header from './shared/header';
 class Portfolio extends Component {
   render() {
     return (
-      <div className="App">
+      <div className='portfolio'>
         <Header/>
       </div>
     );

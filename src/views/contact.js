@@ -4,7 +4,7 @@ import Header from './shared/header';
 class Contact extends Component {
   render() {
     return (
-      <div className="App">
+      <div className='contact-me'>
         <Header/>
       </div>
     );

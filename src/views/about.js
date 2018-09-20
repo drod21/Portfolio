@@ -17,6 +17,8 @@ class About extends Component {
           <img src={picOfMe} alt='my-pic'/>
         </div>
         <div className='about-container'>
+          <p>Computer Science enthusiast</p>
+          
         </div>
       </div>
     );
@@ -24,3 +26,4 @@ class About extends Component {
 }
 
 export default About
+
