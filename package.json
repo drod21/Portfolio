@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "http://drod21.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^1.4.3",
@@ -24,6 +25,11 @@
     "flow": "flow",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.0"
   }
 }
