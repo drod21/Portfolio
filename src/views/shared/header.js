@@ -1,25 +1,31 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 // Material UI imports
-import Button from '@material-ui/core/Button';
+import AppBar from '@material-ui/core/AppBar'
+import Button from '@material-ui/core/Button'
+import ToolBar from '@material-ui/core/Toolbar'
 
 // CSS
 import '../../css/header.css'
 
-class Header extends Component {
+export default function Header(props) {
+  const links = [
+    { route: '/', title: 'Home' },
+    { route: '/about', title: 'About' },
+    { route: '/contact', title: 'Contact' },
+    { route: '/portfolio', title: 'Portfolio' }
+  ]
 
-  render() {
-    return (
-      <div className='header-container'>
-      <Button className='header-link' component={Link} to='/'>Home</Button>
-      <Button className='header-link' component={Link} to='/about'>About</Button>
-      <Button className='header-link' component={Link} to='/contact'>Contact</Button>
-      <Button className='header-link' component={Link} to='/portfolio'>Portfolio</Button>
-      </div>
-    );
-  }
-
+  return (
+    <div className='header-container'>
+      <AppBar postition='static'>
+        <ToolBar>
+          {links.map((link) => {
+            return <Button className='header-link' color='inherit' component={Link} to={link.route}>{link.title}</Button>
+          })}
+        </ToolBar>
+      </AppBar>
+    </div>
+  );
 }
-
-export default Header;
